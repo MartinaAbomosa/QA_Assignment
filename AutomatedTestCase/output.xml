@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.7.3 on darwin)" generated="20200612 13:58:56.571" rpa="false">
+<suite id="s1" name="writeCommentTestcase" source="/Users/MABM/Documents/qa_assignment/QA_Assignment/AutomatedTestCase/flows/writeCommentTestcase.robot">
+<test id="s1-t1" name="Users can write comments">
+<kw name="Given I logged into BBlog website as a user" library="writeComment">
+<arguments>
+<arg>martina.abomosa@capco.com</arg>
+<arg>Qa2020</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://candidatex:qa-is-cool@qa-task.backbasecloud.com</arg>
+<arg>googlechrome</arg>
+</arguments>
+<msg timestamp="20200612 13:58:56.700" level="INFO">Opening browser 'googlechrome' to base url 'https://candidatex:qa-is-cool@qa-task.backbasecloud.com'.</msg>
+<status status="PASS" starttime="20200612 13:58:56.700" endtime="20200612 13:59:10.054"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>20</arg>
+</arguments>
+<status status="PASS" starttime="20200612 13:59:10.054" endtime="20200612 13:59:10.055"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>20</arg>
+</arguments>
+<status status="PASS" starttime="20200612 13:59:10.055" endtime="20200612 13:59:10.056"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath:${Sign_In_TAB}</arg>
+<arg>20</arg>
+</arguments>
+<status status="PASS" starttime="20200612 13:59:10.056" endtime="20200612 13:59:10.077"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:${Sign_In_TAB}</arg>
+</arguments>
+<msg timestamp="20200612 13:59:10.078" level="INFO">Clicking element 'xpath://a[text()="Sign in"]'.</msg>
+<status status="PASS" starttime="20200612 13:59:10.077" endtime="20200612 13:59:10.121"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath:${Username_Field}</arg>
+<arg>20</arg>
+</arguments>
+<status status="PASS" starttime="20200612 13:59:10.121" endtime="20200612 13:59:10.140"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:${Username_Field}</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20200612 13:59:10.140" level="INFO">Typing text 'martina.abomosa@capco.com' into text field 'xpath://input[@type="text"]'.</msg>
+<status status="PASS" starttime="20200612 13:59:10.140" endtime="20200612 13:59:10.340"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:${Password_Field}</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20200612 13:59:10.340" level="INFO">Typing text 'Qa2020' into text field 'xpath://input[@type="password"]'.</msg>
+<status status="PASS" starttime="20200612 13:59:10.340" endtime="20200612 13:59:10.412"></status>
+</kw>
+<kw name="Wait For" library="settings">
+<arguments>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20200612 13:59:10.412" endtime="20200612 13:59:11.433"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:${Sign_In_BTN}</arg>
+</arguments>
+<msg timestamp="20200612 13:59:11.434" level="INFO">Clicking element 'xpath://button[text()=" Sign in "]'.</msg>
+<status status="PASS" starttime="20200612 13:59:11.433" endtime="20200612 13:59:11.498"></status>
+</kw>
+<status status="PASS" starttime="20200612 13:58:56.699" endtime="20200612 13:59:11.499"></status>
+</kw>
+<kw name="And I choose a specific article" library="writeComment">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath:${Global_Feed}</arg>
+<arg>20</arg>
+</arguments>
+<status status="PASS" starttime="20200612 13:59:11.499" endtime="20200612 13:59:12.153"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:${Global_Feed}</arg>
+</arguments>
+<msg timestamp="20200612 13:59:12.153" level="INFO">Clicking element 'xpath://a[text()="Global Feed"]'.</msg>
+<status status="PASS" starttime="20200612 13:59:12.153" endtime="20200612 13:59:12.207"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath:${Article}</arg>
+<arg>20</arg>
+</arguments>
+<status status="PASS" starttime="20200612 13:59:12.207" endtime="20200612 13:59:13.161"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:${Article}</arg>
+</arguments>
+<msg timestamp="20200612 13:59:13.161" level="INFO">Clicking element 'xpath://h1[text()="New Article"]'.</msg>
+<status status="PASS" starttime="20200612 13:59:13.161" endtime="20200612 13:59:13.215"></status>
+</kw>
+<status status="PASS" starttime="20200612 13:59:11.499" endtime="20200612 13:59:13.215"></status>
+</kw>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>5</arg>
+<arg>[LOWER]</arg>
+</arguments>
+<assign>
+<var>${Global_random_comment}</var>
+</assign>
+<msg timestamp="20200612 13:59:13.216" level="INFO">${Global_random_comment} = lrfgv</msg>
+<status status="PASS" starttime="20200612 13:59:13.216" endtime="20200612 13:59:13.216"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${Global_random_comment}</arg>
+</arguments>
+<msg timestamp="20200612 13:59:13.216" level="INFO">${Global_random_comment} = lrfgv</msg>
+<status status="PASS" starttime="20200612 13:59:13.216" endtime="20200612 13:59:13.216"></status>
+</kw>
+<kw name="And I wrote a comment" library="writeComment">
+<arguments>
+<arg>${Global_random_comment}</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:${Write_Comment_TXT}</arg>
+</arguments>
+<msg timestamp="20200612 13:59:13.217" level="INFO">Clicking element 'xpath://textarea'.</msg>
+<status status="PASS" starttime="20200612 13:59:13.217" endtime="20200612 13:59:14.542"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:${Write_Comment_TXT}</arg>
+<arg>${Global_random_comment}</arg>
+</arguments>
+<msg timestamp="20200612 13:59:14.543" level="INFO">Typing text 'lrfgv' into text field 'xpath://textarea'.</msg>
+<status status="PASS" starttime="20200612 13:59:14.542" endtime="20200612 13:59:14.586"></status>
+</kw>
+<status status="PASS" starttime="20200612 13:59:13.216" endtime="20200612 13:59:14.586"></status>
+</kw>
+<kw name="When I click the Post Comment button" library="writeComment">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath:${Post_Comment_BTN}</arg>
+<arg>20</arg>
+</arguments>
+<status status="PASS" starttime="20200612 13:59:14.586" endtime="20200612 13:59:14.601"></status>
+</kw>
+<kw name="Wait For" library="settings">
+<arguments>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20200612 13:59:14.601" endtime="20200612 13:59:15.620"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:${Post_Comment_BTN}</arg>
+</arguments>
+<msg timestamp="20200612 13:59:15.621" level="INFO">Clicking element 'xpath://button[text()=" Post Comment "]'.</msg>
+<status status="PASS" starttime="20200612 13:59:15.620" endtime="20200612 13:59:15.666"></status>
+</kw>
+<status status="PASS" starttime="20200612 13:59:14.586" endtime="20200612 13:59:15.666"></status>
+</kw>
+<kw name="Then I’m able to see my comment posted" library="writeComment">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath:${Comment_Checking}</arg>
+<arg>20</arg>
+</arguments>
+<status status="PASS" starttime="20200612 13:59:15.667" endtime="20200612 13:59:15.703"></status>
+</kw>
+<kw name="Wait For" library="settings">
+<arguments>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20200612 13:59:15.703" endtime="20200612 13:59:16.720"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:${Comment_Checking}</arg>
+</arguments>
+<assign>
+<var>${Get_Comment}</var>
+</assign>
+<msg timestamp="20200612 13:59:16.740" level="INFO">${Get_Comment} = lrfgv</msg>
+<status status="PASS" starttime="20200612 13:59:16.721" endtime="20200612 13:59:16.740"></status>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${Get_Comment}</arg>
+<arg>${Global_random_comment}</arg>
+</arguments>
+<status status="PASS" starttime="20200612 13:59:16.740" endtime="20200612 13:59:16.741"></status>
+</kw>
+<kw name="Close All Browsers" library="SeleniumLibrary" type="teardown">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20200612 13:59:16.741" endtime="20200612 13:59:16.816"></status>
+</kw>
+<status status="PASS" starttime="20200612 13:59:15.666" endtime="20200612 13:59:16.816"></status>
+</kw>
+<status status="PASS" starttime="20200612 13:58:56.699" endtime="20200612 13:59:16.817" critical="yes"></status>
+</test>
+<doc>Example Gherkin Style Test</doc>
+<status status="PASS" starttime="20200612 13:58:56.573" endtime="20200612 13:59:16.818"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="writeCommentTestcase">writeCommentTestcase</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
