@@ -28,7 +28,7 @@ you can dounload the driver compatible with your chrom version from here: https:
 
 ## Running the test
 
-To run the test you have to be on the root folder for the automated test "AutomatedTestCase" then run the following command 
+From the terminal navigate to "AutomatedTestCase" folder then run the following command 
 ```
 robot flows/writeCommentTestcase.robot
 ```
