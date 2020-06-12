@@ -27,6 +27,7 @@ you can dounload the driver compatible with your chrom version from here: https:
 ```
 
 ## Running the test
+Clone this repository to your local machine.
 
 From the terminal navigate to "AutomatedTestCase" folder then run the following command 
 ```
