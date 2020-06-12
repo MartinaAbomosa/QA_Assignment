@@ -8,8 +8,11 @@ Testing BBlog website functionality (CR*D Comments on articles (no updating requ
 
 ## Prerequisitions
 for this project will be using Robot Framework for automate write comment test case. we need to install the following to prepare the environment for testing
+
 *Install python 3
+
 *Install PIP
+
 *Install Robot Framework
 ```
 pip install robotframework
