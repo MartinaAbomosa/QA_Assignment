@@ -21,7 +21,7 @@ pip install robotframework
 ```
 pip install --upgrade robotframework-seleniumlibrary
 ```
-*Install browser drivers(chrome driver for this project)
+*Install browser webdriver(chrome webdriver for this project)
 ```
 you can dounload the driver compatible with your chrom version from here: https://chromedriver.chromium.org/downloads
 ```
