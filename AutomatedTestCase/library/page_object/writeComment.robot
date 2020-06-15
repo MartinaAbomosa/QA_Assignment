@@ -19,8 +19,6 @@ ${Post_Comment_BTN}     //button[text()=" Post Comment "]
 ${Comment_Checking}     //p[@class="card-text"][1]
 
 *** Keywords ***
-Teardown Actions
-    Run Keyword clear
 
 I logged into BBlog website as a user
     [Arguments]  ${username}  ${password}
@@ -41,7 +39,7 @@ I choose a specific article
     Wait Until Element Is Visible       xpath:${Article}     20
     Click Element                       xpath:${Article}
 
-I wrote a comment
+I write a comment
     [Arguments]  ${Global_random_comment}
     Click Element                       xpath:${Write_Comment_TXT}
     Input Text                          xpath:${Write_Comment_TXT}  ${Global_random_comment}
@@ -56,6 +54,14 @@ I’m able to see my comment posted
     wait_for    1
     ${Get_Comment}=    Get Text         xpath:${Comment_Checking}
     should be equal as strings          ${Get_Comment}       ${Global_random_comment}
-    [Teardown]    Close All Browsers
 
+I choose article and write a comment
+    I choose a specific article
+    I write a comment                   ${Global_random_comment}
 
+I write another comment
+    wait_for    1
+    [Arguments]  ${Global_random_comment}
+    Click Element                       xpath:${Write_Comment_TXT}
+    Input Text                          xpath:${Write_Comment_TXT}  ${Global_random_comment}
+    Click Element                       xpath:${Post_Comment_BTN}
